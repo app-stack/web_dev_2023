@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Contact</title>
+</head>
+<body>
+    <header class="header">
+        <div></div>
+        <h1>Welcome on my website</h1>
+           <nav>
+               <li><a href="index.html">Welcome - Accueil</a></li>
+               <li><a href="blog.html">Blog</a></li>
+               <li><a href="galerie.html">Galerie</a></li>
+               <li><a href="contact.html">Contact</a></li>
+           </nav>
+    </header>
+    <section>
+            <form action="welcome.php" method="post">
+                  <fieldset>
+                     <legend>Formulaire</legend>
+                       <div>
+                        <label for="Prénom">Prénom(s)</label>
+                        <span class="req">*</span><input type="text" maxlength="20" minlength="2" placeholder="mon prénom" name="Prénom" id="Prénom" required ><br>
+                        <label for="Nom">Nom</label>
+                        <span class="req">*</span><input type="text" maxlength="20" minlength="2" placeholder="mon nom" name="Nom" id="Nom" required><br>
+                       </div>
+                           <div>
+                            <label for="Email">Email</label>
+                            <span class="req">*</span><input type="text" placeholder="mon email@fai.com" name="Email" id="Email" required><br>
+                           </div>
+                                 <div>
+                                    <label for="Commentaire">Laissez un commentaire</label><br>
+                                    <textarea name="commentaire" cols="70" rows="10">j'adore la Côte d'Ivoire!...</textarea><br>
+                                 </div>
+                           <div>
+                            <input type="checkbox" name="checkboxenvoyez" id="checkboxenvoyez" checked> <label for="checkbox">Envoyez</label><br>
+                           </div>
+                       <div>
+                        <input type="button" name="Submit" value="Submit">
+                        <input type="reset" name="Reset" value="Reset">
+                       </div>
+                       <p><span class="req">*</span> - Required field</p>
+                  </fieldset>
+            </form>
+    </section>
+    <footer>
+        <ul class="footer" id="nobullets">
+           <li><a href="http://www.conseilcafecacao.ci/">Conseil café cacao de Côte d'Ivoire</a></li>
+           <li><a href="https://www.youtube.com/watch?v=Vr7Zj3o3bOg">Le conseil café-cacao et Hershey Company s'engagent à améliorer les revenus des producteurs</a></li>
+        </ul>
+</footer>
+</body>
+</html>

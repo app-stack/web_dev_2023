@@ -1,0 +1,16 @@
+p {
+    font-size: 2em;
+}
+
+h1 {
+  text-shadow: 7px -7px 2px purple;
+}
+
+#p1 {
+    box-shadow: 3px -3px 50px 5px red;
+}
+
+p {
+    box-shadow: -7px 7px 5px greenyellow;
+}
+

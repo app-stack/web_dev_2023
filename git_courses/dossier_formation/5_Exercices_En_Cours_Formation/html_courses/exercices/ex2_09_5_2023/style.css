@@ -1,0 +1,26 @@
+table, th, td {
+    border: 2px solid;
+    width: 500px;
+    height: 50px;
+    border-collapse:collapse;
+}
+
+table, th, td {
+    text-align: center;
+}
+
+th{
+    background-color: blueviolet;
+}
+
+.rowspan {
+    background-color: aqua;
+}
+
+.movies {
+    background-color: blanchedalmond;
+}
+
+.dates {
+    background-color: aquamarine;
+}

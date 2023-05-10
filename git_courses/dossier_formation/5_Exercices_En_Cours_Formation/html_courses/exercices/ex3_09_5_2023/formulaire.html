@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <fieldset>
+    <form action="post">
+        <label for="Prénom">Prénom</label>
+          <input type="text" maxlength="20" minlength="2" placeholder="mon prénom" name="Prénom" id="Prénom"><br>
+        <label for="Nom">Nom</label>
+          <input type="text" maxlength="20" minlength="2" placeholder="mon nom" name="Nom" id="Nom"><br>
+        <label for="Email">Email</label>
+          <input type="text" placeholder="mon email@fai.com" name="Email" id="Email"><br>
+        <label for="Numéro">Numéro</label>
+          <input type="text" placeholder="téléphone" name="Téléphone" id="Téléphone"><br>
+        <label for="Mot de passe">Mot de passe</label>
+          <input type="text" placeholder="mot de passe Xjh*¨^125" name="Mot de passe" id="Mot de passe"><br>
+        <label for="Âge">Âge</label>
+          <input type="number" placeholder="15" name="Mon âge" id="âge"><br>
+        <label for="Commentaire">Laissez un commentaire</label><br>
+          <textarea name="commentaire" cols="70" rows="10">j'adore ce que vous faites!...</textarea><br>
+        <label for="date">Date de mon commentaire</label>
+          <input type="date" id="date"><br>
+        <label for="file">Ma photo:</label>
+          <input type="file" name="Téléverser" id="Téléverser" accept=".jpg, .png, .gif" file_extension(.jpg, .png, .gif) ><br>
+   
+    </form>
+  </fieldset>
+  <fieldset>
+          <legend>Vous préférez:</legend>
+          <input type="checkbox" name="checkboxhtml" id="checkboxhtml" checked> <label for="checkbox">Le HTML</label><br>
+          <input type="checkbox" name="checkboxcss" id="checkboxcss"> <label for="checkbox">Le CSS</label><br>
+          <input type="checkbox" name="checkboxjavascript" id="checkboxjavascript"> <label for="checkbox">Le Javascript</label><br>
+          <input type="checkbox" name="checkboxnerienfaire" id="checkboxnerienfaire"> <label for="checkbox">Ne rien faire</label><br>
+  </fieldset>
+  <fieldset>
+    <legend>Vous vous levez:</legend>
+    <input type="radio" name="lematin" value="lematin" checked> <label for="radio">Le matin</label><br>
+    <input type="radio" name="lemidi" value="lemidi"> <label for="lemidi">le midi</label><br>
+    <input type="radio" name="lesoir" value="lesoir"> <label for="lesoir">le soir</label><br>
+    <input type="radio" name="enretard" value="enretard"> <label for="enretard">En retard !</label><br>
+</fieldset>
+<fieldset>
+  <legend>Fin du formulaire</legend>
+  <label for="button">Vous en avez assez?</label><br>
+  <input type="button" name="Envoyez" value="Envoyez">
+  <input type="reset" name="Reset" value="Reset">
+       <select name="J'en veux plus" id="jenveuxplus">
+            <optgroup label="Team moula">
+              
+                <option>J'en veux plus</option>
+                <option>C'est super !</option>
+            </optgroup>  
+
+            <optgroup label="Team Oula">
+                <option>J'en ai marre</option>
+                <option>Pitié !</option>
+              
+            </optgroup>
+           
+       </select>
+</fieldset>
+</body>
+</html>

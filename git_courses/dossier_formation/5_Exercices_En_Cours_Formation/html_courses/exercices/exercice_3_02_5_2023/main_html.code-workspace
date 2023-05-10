@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "../main_html"
+		},
+		{
+			"path": "../exercice_2/sous_dossier"
+		},
+		{
+			"path": "../exercice_2"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../exercice4_02_5_2023"
+		}
+	],
+	"settings": {}
+}

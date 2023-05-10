@@ -1,0 +1,21 @@
+h1{
+    color: red;
+}
+
+a {
+    color: yellowgreen;
+}
+
+#contenu{
+    background-color: lightgray ;
+}
+
+/* ici le plus ne veut pas dire ajouter, mais de cibler l'élément qui suit */
+#contenu+div{
+    text-align: right;
+}
+
+/* ici le plus ne veut pas dire ajouter, mais de cibler l'élément qui suit; ici le p dans le div */
+#contenu+div p{
+    font-size: 2em;
+}

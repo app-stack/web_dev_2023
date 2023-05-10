@@ -1,0 +1,15 @@
+* {
+    background-color: blueviolet;
+}
+
+#rectangle {
+    background-color: beige;
+    margin: auto;
+    display: block;
+    margin-top: 300px;
+    width: 40%;
+}
+
+#rectangle {
+    box-shadow: -5px -5px 3px yellow, 5px 5px 7px green;
+}

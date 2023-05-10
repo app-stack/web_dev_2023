@@ -1,0 +1,37 @@
+h1{
+   color: red;
+   text-align: center;
+   font-size: 2em;
+}
+
+h3{
+    color: blue;
+    font-size: 1.3em;
+}
+
+p{
+    background-color: gray;
+    font-size: 1em;
+}
+
+strong{
+    color: yellowgreen;
+    font-weight: normal;
+}
+
+em{
+    font-size: 1.2em;
+    color: orange;
+    font-style: normal;
+    text-decoration: underline;
+}
+
+#dernier{
+    background-color: pink;
+}
+
+#secondtitle{
+    color: green;
+    text-align: right;
+    text-decoration: underline;
+}
