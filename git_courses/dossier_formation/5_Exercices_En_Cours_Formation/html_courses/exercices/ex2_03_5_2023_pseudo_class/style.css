@@ -1,0 +1,31 @@
+h1{
+    color: blue;
+}
+/* changing color when we hover on it */
+h1:hover{
+    color: green;
+}
+
+p{
+    font-size: 3em;
+}
+
+/* backgroung is changing color when we click on it */
+p:active{
+    background-color: gray;
+}
+
+/* unvisited link */
+a:link {
+    color: orange;
+  }
+  
+/* visited link */
+a:visited {
+    color: gray;
+  }
+
+/* when you click on the image it disapears */  
+img:hover {
+    display: none;
+}

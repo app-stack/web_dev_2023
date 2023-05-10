@@ -1,0 +1,17 @@
+table, tr, td, th {
+    border: 2px solid;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+caption{
+    color: blueviolet;
+}
+
+th{
+    background-color: lightskyblue;
+}
+
+table{
+    border: thick double blueviolet;
+}
