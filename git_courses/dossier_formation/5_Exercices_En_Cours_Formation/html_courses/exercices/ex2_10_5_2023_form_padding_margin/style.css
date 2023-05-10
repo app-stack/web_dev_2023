@@ -1,0 +1,30 @@
+fieldset{
+    width: 400px;
+    height: 250px;
+    border-color: black;
+    background-color: lightgrey;
+}
+
+p{
+    text-align: center;
+    font-size: 2em;
+}
+
+div:nth-of-type(3){
+    text-align: center;
+    margin: auto;
+    color: red;
+}
+
+div:nth-of-type(1){
+    margin-left: 30px;
+}
+
+input#pseudo{
+    margin-left: 20px;
+}
+
+input#checkbox{
+    margin-left: 30px;
+
+}

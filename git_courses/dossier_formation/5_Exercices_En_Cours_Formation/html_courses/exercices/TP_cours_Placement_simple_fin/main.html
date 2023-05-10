@@ -1,0 +1,26 @@
+<!doctype HTML>
+
+<html lang="fr">
+    <head>
+    <meta charset="utf-8">
+    <title>Placement simple</title>
+    <link rel="stylesheet" href="monCSS.css" >
+    </head>
+    <body>
+        <form action="monPHP.php" method="POST">
+            <h1>Connexion</h1>
+            <div>
+                <label for="pseudo">Pseudo:</label><input type="text" placeholder="Mon pseudo" name="pseudo" id="pseudo"/>
+            </div>
+            <div>
+                <label for="mdp">Mot de passe:</label><input type="password" placeholder="Mon mot de passe" name="mdp" id="mdp"/>
+            </div>
+            <div>
+                <input type="checkbox" name="remember" id="remember" checked/><label for="remember">Se souvenir de moi</label>
+            </div>
+            <div>
+                <input type="submit" value="Connexion" id="connexion"/><input type="button" value="Retour" id="return"/>
+            </div>
+        </form>
+    </body>
+</html>
