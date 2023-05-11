@@ -1,0 +1,25 @@
+div#container_un{
+    display: flex;
+}
+
+div#container_un{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+h1{
+    grid-column: 2;
+    grid-row: 1;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+div#container_un#chat{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row: 2;
+}
+
+
+
