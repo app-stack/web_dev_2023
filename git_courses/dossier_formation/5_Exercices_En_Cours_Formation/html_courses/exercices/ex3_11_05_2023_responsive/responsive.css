@@ -1,0 +1,19 @@
+@media screen and (max-width: 800px){
+    #div_principale{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(3 1fr);
+    }
+    
+    #div_img_top{
+        grid-column: 1 /span 3;
+        grid-row: 1;
+        width: 700px;
+        height: 300px;
+    }
+    
+    .article#article_un{
+        grid-column: 1;
+        grid-row: 2;
+    }
+}
