@@ -1,0 +1,53 @@
+.CardList, .SocialNetwork {
+  display: flex;
+}
+
+/******** 
+reset css 
+********/
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+/******** 
+VARIABLES 
+********/
+h1 {
+  color: Orange;
+  text-decoration: underline rgb(18, 18, 72);
+  font-family: RobotoThin100;
+}
+
+p {
+  color: Black;
+  font-family: MontserratExtraLight200;
+}
+
+/******** 
+VARIABLES 
+********/
+header {
+  background-color: Orange;
+}
+header > nav {
+  color: Black;
+  width: 500px;
+}
+header > nav ~ img {
+  height: 500px;
+  width: 400px;
+}
+
+@font-face {
+  font-family: RobotoThin100;
+  src: url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+}
+@font-face {
+  font-family: MontserratExtraLight200;
+  src: url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Roboto:wght@100&display=swap");
+}
+
+/*# sourceMappingURL=style.css.map */

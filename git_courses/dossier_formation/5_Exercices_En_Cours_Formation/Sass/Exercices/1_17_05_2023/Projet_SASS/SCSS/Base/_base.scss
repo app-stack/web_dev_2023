@@ -1,0 +1,27 @@
+/******** 
+reset css 
+********/
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+/******** 
+VARIABLES 
+********/
+// Couleurs
+
+h1 {
+    color: $Primary_color;
+    text-decoration: underline $Secondary_color;
+    font-family: RobotoThin100;
+    font-size: $BigTitleSize;
+}
+
+p {
+    color: $Text_color;
+    font-family: MontserratExtraLight200;
+}

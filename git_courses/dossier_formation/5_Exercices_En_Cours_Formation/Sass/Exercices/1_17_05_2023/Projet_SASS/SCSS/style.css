@@ -1,0 +1,14 @@
+/******** 
+VARIABLES 
+********/
+header {
+  background-color: Orange;
+}
+header > nav {
+  color: Black;
+  width: 500px;
+}
+header > nav ~ img {
+  height: 500px;
+  width: 400px;
+}/*# sourceMappingURL=style.css.map */

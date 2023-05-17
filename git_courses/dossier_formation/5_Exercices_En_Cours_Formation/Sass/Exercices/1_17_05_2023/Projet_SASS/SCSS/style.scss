@@ -1,0 +1,58 @@
+@import './Utils/Variables/variables'; 
+@import './Utils/Mixins/mixins';
+@import './Utils/Extends/extends';
+@import './Base/base';
+
+
+
+
+
+/******** 
+VARIABLES 
+********/
+// Couleurs
+
+
+
+    header {
+        background-color: $Primary_color;
+            > nav {
+                color: $Text_color;
+                width: 500px;
+                    ~ img {
+                        height: 500px;
+                        width: 400px;
+                    }
+            }
+    }
+
+
+// FONT FAMILY
+
+@font-face {
+    font-family: RobotoThin100;
+    src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+}
+
+
+@font-face {
+    font-family: MontserratExtraLight200;
+    src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Roboto:wght@100&display=swap');
+}
+
+.SocialNetwork {
+    @extend %Flexcard; 
+}
+
+.CardList {
+    @extend %Flexcard;
+}
+
+h1{
+    font-size: $BigTitleSize;
+}
+
+h2, h3{
+    font-size: $ThinFont;
+    color: $Primary_color;
+}
