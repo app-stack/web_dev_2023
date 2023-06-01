@@ -246,21 +246,57 @@ for(let j=0 ; j<4 ; j++){
     right(180-90);
     shiftColor(0.25);
 }
-*/ 
+
 
 //Série D
 //D9
 //Initialisation
-setPos(200,300);
-faceRight();
+setPos(300,200);
 setLineWidth(10);
+faceRight();
 
+//Réalisation
 let length = 100;
 for(let i=0 ; i<6 ; i++){
-    forward(lentgh);
+    forward(length);
     right(120);
-    length = lentgh + 100 ;
+    length = length + 100 ;
 }
+
+
+
+//D10
+//Initialisation
+setPos(300,300);
+setLineWidth(10);
+faceRight();
+
+//Réalisation
+let length = 50;
+for(let i=0 ; i<10 ; i++){
+    forward(length);
+    right(180-90);
+    length = length + 25;
+}
+*/ 
+
+//D11
+//Initialisation
+setPos(50,300);
+setLineWidth(10);
+faceRight();
+
+//Réalisation
+let length = 125
+for(let i=0 ; i<4 ; i++){
+    forward(length)
+    left(180-60)
+}
+    right(180-90);
+    length = length - 25;
+    forward(length);
+
+
 
 
 
