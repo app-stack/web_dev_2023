@@ -1,0 +1,53 @@
+// Le code à l'intérieur de la fonction setup sera exécuté une fois, quand on démarre le dessin
+function setup() {
+  // Créer un canevas de taille 400px de large, 400px de haut.
+  createCanvas(400, 400);
+  console.log("Setup");
+  
+  // Changer la taille du crayon
+  strokeWeight(10);
+  
+  // Changer la couleur de remplissage
+  fill(0,255,0);
+  
+  // Ne pas remplir
+  noFill();
+}
+
+// Le code à l'intérieur de la fonction draw sera exécuté en boucle une fois que le dessin est chargé.
+function draw() {
+  // background permet de remplir la toile d'une couleur
+  // 1 nombre -> nuance de gris
+  // 3 nombres -> RGB
+  // 4 nombres -> RGBa
+  background(255,0,0, 5);
+  
+  // Changer la couleur du crayon
+  stroke(255,255,0);
+  
+  // Dessiner un point
+  point(200,100);
+  
+  stroke(0,0,255);
+  // Dessiner une ligne : x1,y1, x2,y2
+  line(400,0,200,300);
+  
+  circle(100,300, 100);
+  
+  ellipse(100,100,200, 50);
+  
+  // Carré
+  square(0,0 , 400);
+  // Rectangle
+  rect(200,50, 100, 300);
+  
+  // mouseX, mouseY : variables qui contiennent les coordonnées de la souris
+  circle(mouseX, mouseY, 100);
+  
+  console.log("Draw");
+}
+
+// Le code dans la fonction mouseClicked sera exécuté quand l'utilisateur cliquera dans le dessin.
+function mouseClicked() {
+  background(0);
+}

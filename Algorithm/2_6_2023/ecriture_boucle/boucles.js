@@ -107,8 +107,29 @@ for (let i=0 ; i<10 ; i++){
 // 12
 console.log("Exercice 5");
 // TODO
+let exo5=3;
+for(let i=0 ; i<10 ; i++){
+    console.log(exo5);
+    exo5++;
+}
+console.log("...");
 for(let i=3 ; i<13 ; i++){
     console.log(i);
+}
+console.log("...");
+
+for(let i=0 ; i<10 ; i++){
+    console.log(i+3);
+}
+
+console.log("...");
+//Pareil que la première version mais avec un while
+let exo5Quater = 3;
+let i=0 ;
+while (i<10) {
+    console.log(exo5Quater);
+    exo5Quater++;
+    i++;
 }
 // Exerice 6 : écrire dans la console :
 // 0
@@ -131,7 +152,16 @@ for(let j=0 ; j<2 ; j++){
 for (let k=0 ; k<2 ; k++){
     console.log(k);
 }
-
+console.log("...");
+let exo6Ter = 0;
+for(let i=0 ; i<10 ; i++){
+    console.log(exo6Ter);
+    exo6Ter++;
+}
+/*
+console.log("Exercice 6 quater");
+for(let i=0 ; i<10 ; i++)
+*/
 
 // Exercice 7 : écrire dans la console :
 // 0
@@ -156,6 +186,50 @@ for(let i=0 ; i<3 ; i++){
 for(let i=8 ; i<10 ; i++){
     console.log(i);
 }
+console.log("...");
+for (let i=0 ; i<10 ; i++){
+    if(i==5){
+        console.log("A");
+    } else if(i==6){
+        console.log("A");
+    } else if (i==7) {
+        console.log("A");
+    } else {
+        console.log(i);
+            }
+            } 
+
+console.log("Exercice 7 ter")
+for(let i=0 ; i<10 ; i++){
+    if(i>4){
+        if (i<8){
+                console.log("A");
+        } else {
+                console.log(i);
+        }
+    } else {
+        console.log(i);
+    }
+}
+
+console.log("Exercice 7 quater")
+for(let i=0 ; i<10 ; i++){
+    if(i<4 && i>8) { // Si i est compris entre 4 et 8
+            console.log("A")
+    } else {
+            console.log(i);
+    }
+}
+    
+
+console.log("Exercice 7 quinquies")
+for(let i=0 ; i<10 ; i++){
+    if(i==5 || i==6 || i==7) { // Si i vaut 5 ou i vaut 6 ou i vaut 7
+            console.log("A")
+    } else {
+            console.log(i);
+    }
+}
 // Exercice 8 : écrire dans la console :
 // 100
 // 1
@@ -167,11 +241,22 @@ for(let i=8 ; i<10 ; i++){
 // 7
 // 8
 // 109
+
 console.log("Exercice 8");
 // TODO
 
-for (let i=0 ; i<10 ; i+3){
-    console.log(3+100)
+for (let i=0 ; i<10 ; i++){
+   // console.log(i);
+   console.log(i+100);
+}
+console.log("...");
+for(let i=0 ; i<10 ; i++);{
+    if(i%3) { //Si i est multiple de trois
+        console.log(i+100);
+    } else {
+        console.log(i);
+    }    
+    
 }
 
 
@@ -189,7 +274,23 @@ for (let i=0 ; i<10 ; i+3){
 // 9
 console.log("Exercice 9");
 // TODO
-
+for(let i=0 ; i<10 ; i++){ 
+    if(i%3 == 0) {
+        console.log(i);
+    }
+    else {
+        if(i%3 == 1 ) {
+            console.log(i+100);
+        }
+        else{
+            console.log(i+200);
+        }
+}
+}
+console.log("...");
+for(let i=0 ; i<10 ; i++){
+    console.log(i + (i%3)*100 );
+}
 // Exercice 10 : écrire dans la console tous les résultats possibles de lancers de deux dés :
 // 1 1
 // 1 2
