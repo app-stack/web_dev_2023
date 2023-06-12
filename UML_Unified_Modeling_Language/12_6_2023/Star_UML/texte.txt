@@ -1,0 +1,26 @@
+UML
+
+Permet de décrire sous formes de diagrammes lisible les besoins du site du client
+Télécharger
+https://staruml.io/download
+
+Fonctionnalités:
+Pouvoir se créer un compte
+Pouvoir se connecter
+Il y a des fonctionnalités que l'on ne peut utiliser que lorsque on a un compte et qu'on y est connecté
+
+Une fonctionnalité c'est quand on code une page pour interagir avec un client(c'est un cas d'utilisation)
+
+On stocke des infos dans une base de données pour pouvoir les appeler après
+
+On commence toujours par un verbe à l'infinitif pour pouvoir décrire l'action qui est derrière
+
+Exemple : 
+Afficher les infos de localisation (admin + visiteur)
+Afficher les infos des formations (admin + visiteur)
+Afficher la liste du personnel (admin + visiteur)
+Supprimer un membre du personnel (admin)
+Modifier un membre du personnel (admin)
+
+Se connecter (visiteur)
+Se deconnecter (admin + visiteur enregistré)
