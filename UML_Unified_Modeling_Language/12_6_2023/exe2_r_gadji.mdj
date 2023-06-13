@@ -11558,6 +11558,107 @@
 							"propertyLabel": {
 								"$ref": "AAAAAAGIs5ox/xTB6DU="
 							}
+						},
+						{
+							"_type": "UMLUseCaseSubjectView",
+							"_id": "AAAAAAGIs6eBcERlYKs=",
+							"_parent": {
+								"$ref": "AAAAAAGIr/xEx5Q1mRY="
+							},
+							"model": {
+								"$ref": "AAAAAAGIs6eBb0Rj9AA="
+							},
+							"subViews": [
+								{
+									"_type": "UMLNameCompartmentView",
+									"_id": "AAAAAAGIs6eBcERmVP8=",
+									"_parent": {
+										"$ref": "AAAAAAGIs6eBcERlYKs="
+									},
+									"model": {
+										"$ref": "AAAAAAGIs6eBb0Rj9AA="
+									},
+									"subViews": [
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAGIs6eBcERnmcU=",
+											"_parent": {
+												"$ref": "AAAAAAGIs6eBcERmVP8="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": -528,
+											"top": -544,
+											"height": 13
+										},
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAGIs6eBcERofHU=",
+											"_parent": {
+												"$ref": "AAAAAAGIs6eBcERmVP8="
+											},
+											"font": "Arial;13;1",
+											"left": 229,
+											"top": 23,
+											"width": 759,
+											"height": 13,
+											"text": "Blog"
+										},
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAGIs6eBcERpa+I=",
+											"_parent": {
+												"$ref": "AAAAAAGIs6eBcERmVP8="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": -528,
+											"top": -544,
+											"width": 73.67724609375,
+											"height": 13,
+											"text": "(from Model)"
+										},
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAGIs6eBcERqY/c=",
+											"_parent": {
+												"$ref": "AAAAAAGIs6eBcERmVP8="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": -528,
+											"top": -544,
+											"height": 13,
+											"horizontalAlignment": 1
+										}
+									],
+									"font": "Arial;13;0",
+									"left": 224,
+									"top": 16,
+									"width": 769,
+									"height": 25,
+									"stereotypeLabel": {
+										"$ref": "AAAAAAGIs6eBcERnmcU="
+									},
+									"nameLabel": {
+										"$ref": "AAAAAAGIs6eBcERofHU="
+									},
+									"namespaceLabel": {
+										"$ref": "AAAAAAGIs6eBcERpa+I="
+									},
+									"propertyLabel": {
+										"$ref": "AAAAAAGIs6eBcERqY/c="
+									}
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 224,
+							"top": 16,
+							"width": 769,
+							"height": 1649,
+							"nameCompartment": {
+								"$ref": "AAAAAAGIs6eBcERmVP8="
+							}
 						}
 					]
 				},
@@ -12512,6 +12613,14 @@
 							}
 						}
 					]
+				},
+				{
+					"_type": "UMLUseCaseSubject",
+					"_id": "AAAAAAGIs6eBb0Rj9AA=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "Blog"
 				}
 			]
 		}
