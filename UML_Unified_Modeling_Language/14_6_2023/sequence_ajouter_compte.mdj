@@ -180,14 +180,14 @@
 											"left": 172,
 											"top": 80,
 											"width": 1,
-											"height": 985
+											"height": 921
 										}
 									],
 									"font": "Arial;13;0",
 									"left": 48,
 									"top": 40,
 									"width": 248,
-									"height": 1025,
+									"height": 961,
 									"nameCompartment": {
 										"$ref": "AAAAAAGIuVQ+UrsXdzE="
 									},
@@ -299,14 +299,14 @@
 											"left": 647,
 											"top": 80,
 											"width": 1,
-											"height": 985
+											"height": 921
 										}
 									],
 									"font": "Arial;13;0",
 									"left": 560,
 									"top": 40,
 									"width": 174.0703125,
-									"height": 1025,
+									"height": 961,
 									"nameCompartment": {
 										"$ref": "AAAAAAGIuVSQcLs4TU4="
 									},
@@ -1324,10 +1324,10 @@
 									},
 									"font": "Arial;13;0",
 									"left": 24,
-									"top": 1232,
-									"width": 304,
-									"height": 72,
-									"text": "10 : Si le compte existe déjà alors le SI informe le modérateur \n10-1 : Si le compte n'existe pas alors le SI informe le modérateur qu'il peut créer le compte"
+									"top": 1192,
+									"width": 313,
+									"height": 113,
+									"text": "Scénario alternatif :\n10 : Si le mot de passe existe déjà alors le SI informe le modérateur \n10-1 : Si le mot de passe n'existe pas alors le SI informe le modérateur qu'il peut créer son mot de passe (Validation du mot de passe)"
 								},
 								{
 									"_type": "UMLSeqMessageView",
@@ -1896,8 +1896,8 @@
 									"left": 24,
 									"top": 1072,
 									"width": 312,
-									"height": 137,
-									"text": "4 : Vérifier si les infos sont correctes, si non revenir à 2\n\n7 : Vérifier si le email est valide; sinon revenir au 6\n\n\n11 : Vérifier si le mot de passe est valide si non revenir au 10"
+									"height": 113,
+									"text": "Scénario alternatif:\n4 : Vérifier si les infos sont correctes, si non revenir à 2\n\n7 : Vérifier si le email est valide; sinon revenir au 6\n\n\n11 : Vérifier si le mot de passe est valide si non revenir au 10"
 								},
 								{
 									"_type": "UMLTextBoxView",
@@ -1909,8 +1909,21 @@
 									"left": 368,
 									"top": 1072,
 									"width": 272,
-									"height": 80,
-									"text": "13 : Vérifier si le compte est valide sinon revenir au 12"
+									"height": 81,
+									"text": "Scénario alternatif :\n13 : Vérifier si le compte est valide sinon revenir au 12"
+								},
+								{
+									"_type": "UMLTextBoxView",
+									"_id": "AAAAAAGIucw6WcWyjIM=",
+									"_parent": {
+										"$ref": "AAAAAAGIuVLrC7sG0Tg="
+									},
+									"font": "Arial;13;0",
+									"left": 368,
+									"top": 1192,
+									"width": 273,
+									"height": 81,
+									"text": "14 : Scénario d'erreur : La séquence prend fin puisqu'elle est terminée"
 								}
 							]
 						}
