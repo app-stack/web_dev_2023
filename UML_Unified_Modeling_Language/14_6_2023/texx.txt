@@ -1,0 +1,2 @@
+diagramme d'activité de la fonctionnalité choisie
+diagramme de sequence des fonctionnalités (ajout d1 commentaire, le prix total d1 article...)
