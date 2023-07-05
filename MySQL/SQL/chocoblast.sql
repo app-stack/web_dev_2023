@@ -1,5 +1,5 @@
-create database choco;
-use choco;
+create database choco_blast;
+use choco_blast;
 
 create table roles(
 id_roles int primary key auto_increment not null,
@@ -60,3 +60,15 @@ alter table commentaire
 add constraint fk_rattacher_chocoblast
 foreign key(id_chocoblast)
 references chocoblast(id_chocoblast);
+
+-- Requête MAJ
+
+insert into product(name_product, description_product, price_product, id_category) values (alimentaire, fjkjghfkjjk, 10.50, 2);
+update category set name_category = "test"; 
+where id_category  in (1, 3, 5) ;
+
+
+
+
+
+
