@@ -220,14 +220,103 @@ superTab.push(firstname,lastname,initiales);
 console.log(superTab);
 
 //***FUNCTIONS */
+//18_07_2023
 
-let n = "number";
-function Number (n) {
-    console.log(33+m),
+//*Ecrire une fonction 
+function add33(a){
+    console.log(33+a);
+}
+//Appeler la fonction
+// add33(2);
+
+function add33(a){
+    console.log(33+a);
+}
+
+add33(2);
+
+function add(a,b){
+    console.log(a+b);
+}
+
+add(5,6);
+
+
+// Fonction Inscription
+// Test fonctionnel = on teste une fonctionnalité
+// Test Unitaire = on teste une à une chaque fonction
+
+/**
+ * **************************************
+ * 6-FUNCTIONS
+ * **************************************
+ */
+//! Une fonction peut contenir plusieurs instructions
+//! ces intructions sont alors executées à chaque fois qu'on utilise la fonction
+function maSuperFonction(){
+    console.log('Hello World');
+    console.log(22+33);
+}
+//! Détailler la fonction OK, mais ne pas oublier
+//! d'executer au moins une fois dans le programme cette fonction
+maSuperFonction();
+
+//! Certaines fonction ont besoin de prendre un paramètre ici num
+//! Pas besoin de déclarer le paramètre, il sera défini à l'utilisation de 
+//! la fonction
+function fonctionAvecParametre(num){
+    console.log('Hello World');
+    console.log(22+num);
+}
+
+//** Bonne Pratique : paramètre par défaut
+function fonctionAvecParametre(num=0){
+    console.log(22+num);
+}
+//! Ici notre paramètre num aura pour valeur 9
+fonctionAvecParametre(9);
+
+//** Bonne Pratique : paramètre par défaut
+function fonctionAvecParametre(num=0){
+    console.log(22+num);
+}
+//! Ici notre paramètre num aura pour valeur 9
+fonctionAvecParametre(9);
+
+//! Une fonction peut avoir plusieurs paramètres : ici a et b
+function soustraire(a,b){
+    console.log(a - b);
+}
+soustraire(99,33);
+
+//! Dans certains cas une fonction doit pouvoir retourner quelquechose
+//! le résultat d'un calcul par exemple
+//! Ci-dessous on fait une fonction de calcul, notre fonction ne fait que ca
+//! Elle se charge JUSTE de faire un calcul
+//! L'affichage du résultat se fera en dehors de la fonction
+function calculReturn(unNombre, unAutreNombre){
+    return unNombre + unAutreNombre
+}
+//! Ici le calcul qui est return par la fonction est stocké dans une variable
+//! resultat
+let resultat = calculReturn(22,99);
+console.log(resultat);
+// ou executer la fonction quand on a besoin
+console.log('Le résultat : ', calculReturn(22,99));
+
+
+// ? La notion de scope (la portée d'une variable)
+// ? Dans l'exemple ci-dessous on a 2 fois la même variable testScope1 qui est déclarée ?????
+// ? En fait même si elles ont le même nom ce ne sont pas les même espaces mémoires qui sont alloués
+// ? let testScope1 = 99; est dans le scope global de notre programme 
+// ? let testScope1 = 12; est dans le scope de la fonction
+let testScope1 = 99;
+function maFonctionTestScope(){
+    let testScope1 = 12;
+    console.log('scope de la fonction :',testScope1);
 };
-
-
-
+maFonctionTestScope();
+console.log('scope hors de la fonction :',testScope1);
 
 
 
