@@ -232,3 +232,26 @@ console.log(myUser.passion);
 console.log(myUser.passion['secondpassion']);
 console.log(myUser.passion.secondpassion);
 
+//
+
+// ! EXO 8 OBJECTS
+// TODO : Faire l'exo avec les passions en mode objet
+let nameUser = 'Dong Rodrigue';
+let ageUser = 65;
+let objetUser = {
+    'nom' : nameUser,
+    'age' : ageUser,
+    'passions': {
+        passion1:'Le Drift',
+        passion2:'Jonquilles'
+    }
+};
+console.log('objet de utilisateur : ',objetUser);
+console.log(objetUser.nom);
+console.log(objetUser['passions']);// c le taleau passions
+console.log(objetUser.passions.passion2);
+
+objetUser.name = 111;
+objetUser.age = 'DonDiegoDelavega';
+objetUser.passions.passion2 = 'Le Cinéma';
+
