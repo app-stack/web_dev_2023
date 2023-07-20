@@ -1,0 +1,8 @@
+Alt Z remet l'écran bien en affichage
+Visual studio code
+
+Pour centrer un contenu dans une div
+il faut que le width soit fixe par exemple 
+
+width = 50 % ou 50px ;
+et margin = auto ;
