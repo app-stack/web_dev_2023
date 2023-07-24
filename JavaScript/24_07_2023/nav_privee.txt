@@ -1,0 +1,6 @@
+Tout développer en navigation privée
+Ce qui permet de nettoyer le cache à chaque fois 
+
+classList.add
+classList.remove
+classList.toggle
