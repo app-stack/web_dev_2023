@@ -1,0 +1,2 @@
+Pour recharger la page en javascript, il faut cliquer sur F5
+Pour recharger la page en javascript, il faut cliquer Control R (reload)
