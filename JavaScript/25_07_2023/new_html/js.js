@@ -104,31 +104,18 @@ leInput.addEventListener("focus", function () {
 } )
 
 leInput.addEventListener("blur", function () {
-    leInput.style.backgroundColor="transparent";
+    leInput.style.color="transparent";
 } )
 
-let leInput2 = document.querySelector('#exampleFormControlInput1');
+let leInput2 = document.querySelector('#formMessage');
 console.log(leInput2);
 
 leInput2.addEventListener("focus", function () {
     leInput2.style.backgroundColor="Cyan";
-    // leInput2.style.changeFontColor="Floralwhite";
 } )
 
 leInput2.addEventListener("blur", function () {
-    leInput2.style.backgroundColor="transparent";
-} )
-
-let leInput3 = document.querySelector('#formMessage');
-console.log(leInput3);
-
-leInput3.addEventListener("focus", function () {
-    leInput3.style.backgroundColor="Fuchsia";
-    // leInput3.style.changeFontColor="Floralwhite";
-} )
-
-leInput3.addEventListener("blur", function () {
-    leInput3.style.backgroundColor="transparent";
+    leInput2.style.color="transparent";
 } )
 
 console.log("----------------------------");
