@@ -107,16 +107,18 @@ leInput.addEventListener("blur", function () {
     leInput.style.color="transparent";
 } )
 
-let leInput2 = document.querySelector('#formMessage');
-console.log(leInput2);
+// let leInput2 = document.querySelector('#formMessage');
+// console.log(leInput2);
 
-leInput2.addEventListener("focus", function () {
-    leInput2.style.backgroundColor="Cyan";
-} )
+// leInput2.addEventListener("focus", function () {
+//     leInput2.style.backgroundColor="Cyan";
+// } )
 
-leInput2.addEventListener("blur", function () {
-    leInput2.style.color="transparent";
-} )
+// leInput2.addEventListener("blur", function () {
+//     leInput2.style.color="transparent";
+// } )
+
+
 
 console.log("----------------------------");
 
