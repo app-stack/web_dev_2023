@@ -108,33 +108,71 @@ class Employe {
         this._salaire = salaire;
         this._cout = this.calcul_Cout(); //! attribute en OUT mode (à calculer)
     }
+
+    getCout(){
+        return this._cout;
+    } 
+
+    display_Cout(){
+        console.log(this._nom+this._prenom+this._age+this._salaire+this._cout);
+    };
+
+    calcul_Cout (){
+        let month = 12;
+        let tax = 0.9;
+
+        return this._salaire  * (month) * 1 + (tax) ;
+    }
 }
+
 
 
 class Pme {
     //* Constructor -> initialise les données
-    constructor(nom_entreprise, employe1, employe2, employe3) {
+    constructor(nom_entreprise, employes, revenu, frais_fixe, frais_dachats) {
         this._nom_entreprise = nom_entreprise; //! 3 attributes en In mode
-        this._employe1 = employe1;
-        this._employe2 = employe2;
-        this._employe3 = employe3;
-      this._bilan_entreprise = this._bilan_entreprise(); //! attribute en OUT mode (à calculer)
+        this._employes = employes;
+        this._revenu = revenu;
+        this._frais_fixe = frais_fixe;
+        this._frais_dachats = frais_dachats;
+        this._charge_salariale = this.Cout_Total_employes();
+      this._bilanCalculated = this.bilanCalculated(); //! attribute en OUT mode (à calculer)
+    }
+
+    bilanCalculated(){
+        
+        let bilan = this._revenu - (this._frais_fixe + this._frais_dachats+ this._charge_salariale);
+        return bilan;
+    }
+
+    display_bilanCalculated(){
+        // let ca_entreprise = 0;
+        console.log(`revenu : ${this._revenu} 
+        : Cout Initial : ${this._frais_fixe + this._frais_dachats}
+        cout equipe : ${this.Cout_Total_employes()}
+        bilan : ${this.bilanCalculated()}`);
+    }
+    
+
+
+    Cout_Total_employes(){
+        let total = 0;
+
+        for(let employe of this._employes){
+            total += employe._cout;
+        }
+
+
+        return total;
     }
 }
 
+let Adrar = new Pme("adrar",[new Employe("Gadji","Raymond","40",2000), new Employe("Salvan", "Remi", "20", 3000), new Employe("Garcia", "Alexia", "30", 3000)], 300000, 20000, 50000 );
+
+Adrar.display_bilanCalculated();
+
+
 // me servira à passer le cout d1 employé dans la classe PME
-
-let salaire1 = 2000;
-let salaire_employe1 = salaire1 * 12;
-console.log(salaire_employe1);
-
-let salaire2 = 3000;
-let salaire_employe2 = salaire2 * 12;
-console.log(salaire_employe2);
-
-let salaire3 = 4000;
-let salaire_employe3 = salaire3 * 12;
-console.log(salaire_employe3);
 
 // bilanCalculed () {        
 //     let ca_entreprise = 0;

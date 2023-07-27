@@ -1,0 +1,13 @@
+locaSstorage
+
+set = tu places
+get = tu recupères
+
+Application => localStorage et on a les values 
+
+getItem = on recupère
+setItem = on assigne
+
+Javascript Service Objet Notation (Notation d'Objet service Javascript)
+
+Endpoint = extension d'une url de API
