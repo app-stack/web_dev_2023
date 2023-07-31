@@ -1,0 +1,22 @@
+CMS est utilisé pour construire des websites. L'on peut y coder 
+
+Thème enfant (child) wp-apparence
+clik sur un lien, prendre le nom, le recopier et ajouter child par exemple
+wp-apparence/theme
+wp-apparence/theme_child
+
+Réactualiser la page wordpress web, normalement on doit le voir dans les thèmes "apparence" "theme", 
+cliker sur "activer" le thème c'est l'équivalent du css (style.css...) 
+
+Pour les pluggins, regarder la dernière mise à jour, si elle date de plus de deux ans, c'est problématique. 
+UpdraftPlus 
+
+1 Créer une nouvelle base de données à partir de xaamp (=>htdocs =>créer une base de données[créer un nouveau dossier et le nommer])
+2 Reprendre le dossier wordpress original et le copier qq part (bureau? disk dur?...), ensuite le renommer du même nom que la base de données
+3 Cliquer http://localhost/nom_du_dossier_base_de_donnees/wp-login.php (à créer)
+4 Renseigner le 
+5 Shift + Windows + S puis sélectionner l'image qu'on veut, ensuite la copier qq part...
+
+http://localhost/cacao_de_ci/mafe-_-sauce-arachide-a-lafricaine/
+
+
