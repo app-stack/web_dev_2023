@@ -60,3 +60,6 @@ Réalisez la conception Merise :
 Veuillez envoyer le tout dans un repository github (fichiers StarUml et captures d'écranMCD MLD) en MP Discord.
 Effectuez un commit pour chaque diagramme (Use case, Activité, Séquence, MCD, MLD).
 
+---------------------------------------------------
+
+Ctrl + molette (haut et bas) pour zoomer
