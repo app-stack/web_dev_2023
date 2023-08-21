@@ -1,0 +1,62 @@
+employés => connection => application => intervention
+
+administrateurs => interface => gérer leurs interventions
+
+équipements informatiques => stocks, pannes, interventions, installations
+
+responsable => gère les utilisateurs (personnel et membre du 
+service informatique (administrateur informatique)
+
+Les utilisateurs (nom, prénom, âge, fonction) => rattachés => à un service (nom)
+
+Chaque utilisateur => travaille sur un => ordinateur (portable ou unité centrale et écran)
+
+Les équipements informatiques => ont une marque, un modèle et des caractéristiques techniques
+
+Un équipement lors de son achat ne sera pas attribué à un utilisateur
+
+Le service informatique => possède aussi du matériel en spare (Matériel de remplacement)
+ 
+Le service informatique => installe sur des ordinateurs des logiciels (nom, version)
+ 
+Le responsable informatique => souhaite garder par équipement et logiciel, le numéro de licence et le 
+temps passé à l’installation
+
+---------------------------------------------------
+
+utilisateur anonyme seul peut se connecter
+employés
+techniciens =>
+responsable => voir la liste de tous les employés
+voir la totalité du parc informatique
+
+-----------------------------------------------------
+
+Diagramme de cas d'utilisation :
+Acteurs :
+-Visiteur (connexion),
+-Administrateur(gérer les utilisateurs et les accès).
+-Employé, intervenant(technicien), le responsable du service informatique.
+
+Objectif de la semaine :
+Lundi :
+Réalisez le diagramme UML :
+-Diagramme de cas d'utilisation,
+Commencez les diagrammes UML :
+-Diagrammes d'activité,
+-Diagrammes de séquence (en incluant les scénarios d'erreurs et alternatifs),
+Mardi :
+Continuez les diagrammes UML :
+-Diagrammes d'activité,
+-Diagrammes de séquence (en incluant les scénarios d'erreurs et alternatifs).
+Mercredi :
+Terminez les diagrammes UML :
+-Diagrammes d'activité,
+-Diagrammes de séquence (en incluant les scénarios d'erreurs et alternatifs).
+Réalisez la conception Merise :
+-MCD (Modèle Conceptuel des Données),
+-MLD (Modèle Logique des Données). (modifié)
+[11:04]
+Veuillez envoyer le tout dans un repository github (fichiers StarUml et captures d'écranMCD MLD) en MP Discord.
+Effectuez un commit pour chaque diagramme (Use case, Activité, Séquence, MCD, MLD).
+
