@@ -1,0 +1,34 @@
+Challenge Algo du jour -> 20 minutes : 
+Pour son nouveau spectacle, un mentaliste a besoin d'un programme pour s'exercer à deviner un nombre aléatoire (entre 1 et 100).
+Pour réussir son tour il doit deviner le nombre en moins de 10 tentatives.
+A chaque tour il va demander si le nombre qu’il énonce est plus petit ou plus grand.
+Si il réussit à découvrir le nombre en moins de 10 essais, son entrainement acharné a payé, 
+sinon il est un mauvais mentaliste et il va devoir changer de métier !
+Il souhaite savoir en cas de réussite le nombre d'essai qu'il à effectué pour trouver le nombre.
+Ecrire un algorithme qui va l'aider à s'entrainer dans le langage de votre choix.
+
+math.random ();
+
+for (let i = 0; i < 10; i++) {
+  text += cars[i] + "<br>";
+}
+
+
+
+nbre aléatoire entre 1 et 100 
+let aleatoire = (Math.random() * 100 + 1);
+
+const devinez = parseInt(prompt('devinez un nombre entre 1 et 100 svp '));
+
+boucle qui va tourner maximum 10 fois 
+for (let i = 0; i < 10; i++){
+if (devinez > 100) { console.log ("perdu"); }
+else if (devinez = aleatoire) { console.log ("Vous avez gagné avec " + (i) "tentatives"); }
+else (devinez = aleatoire && i=1) { console.log ("Vous avez gagné avec en une seule tentative"); }
+
+si on trouve en moins de 10 => on arrête la boucle et on affiche "gagné" avec le nbre de tentatives
+
+si on trouve en une fois => on arrête la boucle et on affiche "gagné en une seule fois" 
+
+sinon on affiche "perdu"
+
