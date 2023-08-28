@@ -1,0 +1,15 @@
+PHP 28_08_2023
+Formateur = Guillaume
+
+joplin pour prendre des notes 
+
+Language interpreté => L'ordi lit et exécute le code ligne par ligne
+(Java, Python, Javascript, PHP...)
+
+Language compilé => ordi compile le code pour que ce soit la machine qui execute le code, le script
+(C, C++, Pascal ...)
+
+Language fortement typé => on crée par exemple des variables (chaine de caractères ... qui ne changent pas en cours de route)
+Language faiblement typé => on crée par exemple des variables (chaine de caractères ... qui peuvent changer pas en cours de route)
+
+Docker (localhost, environnement de travail style xampp...)
