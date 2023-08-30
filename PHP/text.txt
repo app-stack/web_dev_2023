@@ -13,3 +13,10 @@ Language fortement typé => on crée par exemple des variables (chaine de caract
 Language faiblement typé => on crée par exemple des variables (chaine de caractères ... qui peuvent changer pas en cours de route)
 
 Docker (localhost, environnement de travail style xampp...)
+Il faut s'ajouter au groupe Docker users => lusrmgr.msc (invit de commande)
+
+Tout script se crée avec .php par exemple index.php pour index.html
+
+<?php ... code PHP ...?> balise normale
+<?= ... texte ...?> balise courte permettant l'affichage de texte
+echo "du texte"; echo "hello world"; 

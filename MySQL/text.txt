@@ -1,0 +1,48 @@
+MCD
+Que veut dire MCD
+Modèle conceptuel de données, également appelé MCD pour modèle conceptuel de données, est une représentation claire des données du système d'information à concevoir.
+C’est un diagramme de merise qui va permettre de représenter les entités ainsi que les relations entre elles. C’est le diagramme qui va nous permettre de générer le MLD.
+Entité, clé primaire, enregistrements ou tuples, attribut, association, cardinalité
+
+Entité = ensemble homogène d’informations
+Table : Dans les bases de données relationnelles, une table est un ensemble de données organisées sous forme d'un tableau où les colonnes correspondent à des catégories d'information (une colonne peut stocker des numéros de téléphone, une autre des noms...) et les lignes à des enregistrements, également appelés entrées.
+
+Attribut = Un attribut est une caractéristique d'une table susceptible d'être enregistrée dans la base de données. Par exemple, une personne (entité), son nom et son adresse (des attributs). Les attributs sont également appelés des champs ou des colonnes.
+
+tuple = Un enregistrement = correspond à une ligne d’une table dans une base de données. 
+Clé primaire : est l’identifiant unique d’une table. Elle permet d’identifier un enregistrement dans la table.
+Association : les liaisons et les interactions entre ces différentes données cohérentes, on parle d’association
+
+La cardinalité d'une association = permet de représenter le nombre minimum et maximum d'instances qui sont autorisées à participer à la relation. La cardinalité est définie pour les deux sens de la relation.
+
+MLD
+Que veut dire MLD
+
+ modèle logique de données (MLD) est la représentation des données d'un système d'information
+C’est un diagramme de merise qui va représenter la base de données de façon graphique. Il est généré depuis le MCD (transformation MCD -> MLD). C’est depuis ce schéma que l’on va coder
+
+Type 1  ?
+Valeur : 0,1 = 1 personne ou 1 quantité 
+
+ Que veut dire clé étrangère ? 
+Une clé étrangère ou Foreign key = est un attribut qui fait référence à un enregistrement de la table avec laquelle elle est liée. Elle va nous permettre de récupérer la valeur correspondante dans la table liée.
+
+Type N ? 
+Valeur n = plusieurs quantités 
+Table d'association ?
+
+Table d’association : la table qui fait la liaison entre différentes tables 
+
+Les contraintes sont les règles appliquées aux colonnes de données d'une table. Celles-ci sont utilisées pour limiter le type de données pouvant aller dans une table. Cela garantit l'exactitude et la fiabilité des données de la base de données.
+
+Les contraintes peuvent être au niveau de la colonne ou de la table. Les contraintes de niveau de colonne ne sont appliquées qu'à une seule colonne, alors que les contraintes de niveau de table s'appliquent à l'ensemble de la table.
+
+Les contraintes les plus communes sont :
+
+ NOT NULL
+ DEFAULT
+ UNIQUE
+ CHECK
+ PRIMARY KEY
+ FOREIGN Key
+ INDEX
