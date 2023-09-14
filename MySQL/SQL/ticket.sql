@@ -56,3 +56,5 @@ references product(id_product),
 add constraint fk_ajouter_ticket
 foreign key(id_receipt)
 references receipt(id_receipt);
+
+change table (category)
