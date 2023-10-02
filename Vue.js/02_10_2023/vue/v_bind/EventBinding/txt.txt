@@ -1,0 +1,92 @@
+Event Binding(Gérer les evants)
+
+//! SOLUCE sans utiliser de methods (tout se passe côté Template)
+Vue.createApp({
+    data(){
+        return {
+            leNombre : 0
+        };        
+    },
+    methods: {
+        // Pas besoin on est trop fort
+    }
+}).mount('#monApp');
+
+
+    <div id="monApp" class="container mt-4 mb-4 p-3 d-flex justify-content-center">
+        <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+        <button v-on:click="leNombre= leNombre-1" type="button" class="btn btn-danger">-</button>
+        <h3 class="mx-3">le nombre : {{leNombre}}</h3>
+        <button v-on:click="leNombre++" type="button" class="btn btn-success">+</button>
+        </div>
+    </div>
+
+------------------------------------------------------------------------------------------------------------
+
+Avec methods
+Vue.createApp({
+    data(){
+        return {
+            leNombre : 0
+        };        
+    },
+    methods: {
+        augmenter(){
+            this.leNombre ++;
+        },
+        reduire(){
+            this.leNombre --;
+        }
+    }
+}).mount('#monApp');
+
+
+    <div id="monApp" class="container mt-4 mb-4 p-3 d-flex justify-content-center">
+        <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+            <button v-on:click="reduire()" type="button" class="btn btn-danger">-</button>
+            <h3 class="mx-3">le nombre : {{leNombre}}</h3>
+            <button v-on:click="augmenter" type="button" class="btn btn-success">+</button>
+        </div>
+    </div>
+
+
+--------------------------------------------------------------------------------------------------------------
+
+SOLUCE avec METHODS + PARAMS 
+Vue.createApp({
+    data(){
+        return {
+            leNombre : 0,
+            truc:2,
+            uneString:'Hello'
+        };        
+    },
+    methods: {
+        augmenter(num){
+            this.leNombre += num;
+        },
+        reduire(num){
+            this.leNombre -= num;
+        }
+    }
+}).mount('#monApp');
+
+
+
+    <div id="monApp" class="container mt-4 mb-4 p-3 d-flex justify-content-center">
+        <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+            <button v-on:click="reduire(44)" type="button" class="btn btn-danger">-</button>
+            <h3 class="mx-3">le nombre : {{leNombre}}</h3>
+            <button v-on:click="augmenter(10)" type="button" class="btn btn-success">+</button>
+        </div>
+    </div>
+
+
+Le bouton - réagit au clic gauche (le clic normal)
+Le bouton - réagit au clic droit 
+v-on:click.right (ou left)
+
+form submit js
+(preventDefault)
+
+
