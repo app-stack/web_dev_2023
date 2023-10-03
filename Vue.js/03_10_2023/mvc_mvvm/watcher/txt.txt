@@ -1,0 +1,4 @@
+Exemple d'utilisation des WATCHER (des fonction qui porte le même nom qu'une data)
+pour surveiller une data et réagir
+
+html

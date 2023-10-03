@@ -89,4 +89,6 @@ v-on:click.right (ou left)
 form submit js
 (preventDefault)
 
+Event modifiers
+
 
