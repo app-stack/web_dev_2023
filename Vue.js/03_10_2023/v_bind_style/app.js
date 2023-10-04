@@ -9,11 +9,11 @@ Vue.createApp({
     methods: {
         selectionCard(uneCard) {
             if(uneCard == 1){
-                this.selectCard1 = true
-            }else if(uneCard == 2){
-                this.selectCard2 = true
-            }
-        
+                this.selectCard1 = true;
+            }  
+            if(uneCard == 2){
+                this.selectCard2 = true;
+            } 
         },
     },
 

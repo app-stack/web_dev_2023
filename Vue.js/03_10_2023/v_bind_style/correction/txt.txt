@@ -1,0 +1,2 @@
+@click ca veut dire v-on:click
+variable ? ca veut dire variable == true?

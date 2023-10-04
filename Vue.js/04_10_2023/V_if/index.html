@@ -9,22 +9,33 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"  integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     </head>
     <body id="monApp">
-    <h1 class="text-center">Card_V_bind_style_inline</h1>
+    <h1 class="text-center">Conditionnal Rendering</h1>
     <hr />
-    <div class="row row-cols-1 row-cols-md-3 g-4 m-3 justify-content-center">
-        <div class="col">
-            <div class="card bg-primary" >
-                <div v-on:click="selectionCard(1)" v-bind:style="{backgroundColor:selectCard1 == true ? "blue":"red"}" class="card-body bg-primary">
-                        <h5 class="card-title">Card title</h5>
-                    </div>
-                    </div>
+    <div>
+        <div class="m-3">
+        <div>
+            <p>WatchList (Films à voir)</p>
+            <input v-model="monString" type="text" class="form-control" />
+            <h1 >
+            
+            </h1>
         </div>
-        <div class="col">
-            <div class="card bg-warning" >
-                <div v-on:click="selectionCard(2)" class="card-body bg-warning">
-                <h5 class="card-title">Card title</h5>
-            </div>
-            </div>
+
+        <div class="mb-3 form-check"></div>
+        <button @click="ajouter" class="btn btn-primary">
+            Ajouter à votre liste
+        </button>
+        <div class="mb-3">
+            <!-- <h1  class="form-label mt-1">
+                {{monString}}
+            </h1> -->
+            <h1 v-if="mesFilms.length" class="form-label mt-1">
+                {{mesFilms}}
+            </h1>
+            <h1 v-else>
+                svp rajoutez des films
+            </h1>
+        </div>
         </div>
     </div>
     <script src="https://unpkg.com/vue@next"></script>

@@ -7,25 +7,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS v5.2.0-beta1 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"  integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <style>
+        .class1 {
+        background-color: mediumslateblue;
+        }
+        .class2 {
+        background-color: chartreuse;
+        }
+        </style>
     </head>
     <body id="monApp">
-    <h1 class="text-center">Card_V_bind_style_inline</h1>
+
+    <h1 class="text-center">V_bind_Class</h1>
     <hr />
-    <div class="row row-cols-1 row-cols-md-3 g-4 m-3 justify-content-center">
+    <div id="monApp">
+        <div class="row row-cols-1 row-cols-md-3 g-4 m-3 justify-content-center">
         <div class="col">
-            <div class="card bg-primary" >
-                <div v-on:click="selectionCard(1)" v-bind:style="{backgroundColor:selectCard1 == true ? "blue":"red"}" class="card-body bg-primary">
-                        <h5 class="card-title">Card title</h5>
-                    </div>
-                    </div>
-        </div>
-        <div class="col">
-            <div class="card bg-warning" >
-                <div v-on:click="selectionCard(2)" class="card-body bg-warning">
+            <div class="card" @click="selectionCard(1)" :class="{class1:selectCard1}">
+            <div class="card-body">
                 <h5 class="card-title">Card title</h5>
             </div>
             </div>
         </div>
+        <div class="col">
+            <div class="card" @click="selectionCard(2)" :class="{class2:selectCard2}">
+                <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+            </div>
+            </div>
+        </div>
+        </div>
+        <!-- Ici on a rangé plusieurs modif dans un objet que l'on binder directement -->
+        <div :style="styleObject">Class</div>
     </div>
     <script src="https://unpkg.com/vue@next"></script>
     <script src="app.js"></script>

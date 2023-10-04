@@ -11,21 +11,25 @@
     <body id="monApp">
     <h1 class="text-center">Card_V_bind_style_inline</h1>
     <hr />
-    <div class="row row-cols-1 row-cols-md-3 g-4 m-3 justify-content-center">
+    <div id="monApp">
+        <div class="row row-cols-1 row-cols-md-3 g-4 m-3 justify-content-center">
         <div class="col">
-            <div class="card bg-primary" >
-                <div v-on:click="selectionCard(1)" v-bind:style="{backgroundColor:selectCard1 == true ? "blue":"red"}" class="card-body bg-primary">
-                        <h5 class="card-title">Card title</h5>
-                    </div>
-                    </div>
-        </div>
-        <div class="col">
-            <div class="card bg-warning" >
-                <div v-on:click="selectionCard(2)" class="card-body bg-warning">
+            <div class="card" @click="selectionCard(1)" :style="{backgroundColor: selectCard1 ==true ? 'red':'aqua' }">
+            <div class="card-body">
                 <h5 class="card-title">Card title</h5>
             </div>
             </div>
         </div>
+        <div class="col">
+            <div class="card" @click="selectionCard(2)" :style="{backgroundColor: selectCard2 ? 'green':'violet' }">
+                <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+            </div>
+            </div>
+        </div>
+        </div>
+        <!-- Ici on a rangé plusieurs modif dans un objet que l'on binder directement -->
+        <div :style="styleObject">Cool</div>
     </div>
     <script src="https://unpkg.com/vue@next"></script>
     <script src="app.js"></script>
