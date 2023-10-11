@@ -1,0 +1,9 @@
+Gérer la clé primaire de la table "Attempt_Quiz"
+la clé primaire sera une clé composée entre (id_users, id_quiz, id_answers, attempt_quiz)
+Pour savoir quelle tentative tu vas devoir gérer, il va falloir connaitre la valeur de la dernière tentative de l'utilisateur.
+Pour ça il faudra faire une requete du genre : 
+
+select max(attempt_quiz) as derniere_tentative from attempt_quiz
+where id_users = x and id_quiz = y;
+
+Du coup quand tu enregistreras les réponses de sa nouvelle tentative tu incrémenteras de 1 le résultat de la requete

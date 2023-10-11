@@ -1,0 +1,57 @@
+<?php
+
+
+
+$user_log = [
+	'type' => 'user_log',
+  'user_log' => [
+  	'id' => 3,
+    'adresse_ip' => '1321',
+    'date_connection' => '321321',
+  ], 
+  'quiz' => [
+    'id' => 'dqslk',
+    'dslkj'=>'dsml'
+  ],
+];
+
+$error_log = [
+	'classe_php' => 'appli.php',
+	'fonction concernee' => '',
+];
+
+// activity_log (log utilisation normale)
+// error_log (log en cas d'erreur)
+
+// $user_log =  definir le format
+// error log => format
+
+
+$json = json_encode($tableau);
+
+var_dump($json);
+
+var_dump(json_decode($json));
+?>
+
+result
+
+string(101) "{"user":{"id":3,"adresse_ip":"1321","date_connection":"321321"},"quiz":{"id":"dqslk","dslkj":"dsml"}}"
+object(stdClass)#2 (2) {
+  ["user"]=>
+  object(stdClass)#1 (3) {
+    ["id"]=>
+    int(3)
+    ["adresse_ip"]=>
+    string(4) "1321"
+    ["date_connection"]=>
+    string(6) "321321"
+  }
+  ["quiz"]=>
+  object(stdClass)#3 (2) {
+    ["id"]=>
+    string(5) "dqslk"
+    ["dslkj"]=>
+    string(4) "dsml"
+  }
+}
